@@ -33,5 +33,5 @@ You should see an output similar to the following:
 2023/04/24 11:38:32 found 0 IPs in ABCDEFGHI.2023-04-23-20.3c8527a5.gz
 2023/04/24 11:38:33 found 2 IPs in ABCDEFGHI.2023-04-23-20.3da42292.gz
 2023/04/24 11:38:34 found 8 IPs in ABCDEFGHI.2023-04-23-20.48d1a4df.gz
-2023/04/24 11:40:19 found total of 1242 IPs across 64 .gz files
+2023/04/24 11:40:19 found total of 1242 IPs across 5 .gz files
 ```
