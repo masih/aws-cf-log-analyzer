@@ -14,6 +14,9 @@ import (
 var ipv4RegExp = regexp.MustCompile(`(25[0-5]|2[0-4][0-9]|[01]?[0-9][0-9]?)(\.(25[0-5]|2[0-4][0-9]|[01]?[0-9][0-9]?)){3}`)
 
 func main() {
+	if len(os.Args) != 3 {
+		log.Fatal("two arguments must be specified: <path-to-gz-logs-dir> as first argument and <path-to-target-ips-file> as second.")
+	}
 	logsGzPath := os.Args[1] // path to directory containing `.gz` log files.
 	ipPath := os.Args[2]     // path to text file containing IPs
 
