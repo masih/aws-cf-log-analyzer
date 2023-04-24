@@ -12,7 +12,7 @@ It then scans each of the log files and prints the number of target IP addresses
 1. Enable AWS CloudFront logging first; see [docs](https://docs.aws.amazon.com/AmazonCloudFront/latest/DeveloperGuide/AccessLogs.html#access-logs-analyzing).
 2. Once logs have accumulated, sync the logs to your local machine:
    ```shell
-   aws s3 sync s3://<aws-cf-log-bucket>/<prefix-if-any> . 
+   aws s3 sync s3://<aws-cf-log-bucket>/<prefix-if-any> <path-to-gz-logs-directory> 
    ```
 3. Prepare a plain text file containing the target IPs. This can be in any format. The tool uses regular expression to extract IPs from the text file.
 4. Install the analyzer:
